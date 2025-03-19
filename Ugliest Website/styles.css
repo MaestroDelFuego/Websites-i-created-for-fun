@@ -1,0 +1,103 @@
+body {
+    background: repeating-linear-gradient(45deg, red, yellow 10px, blue 20px);
+    color: lime;
+    font-family: "Comic Sans MS", cursive;
+    text-align: center;
+    animation: flash 0.5s infinite alternate;
+    cursor: url('https://www.w3schools.com/html/pic_trulli.jpg'), auto;
+    overflow: hidden;
+}
+@keyframes flash {
+    from { background-color: pink; }
+    to { background-color: purple; }
+}
+marquee {
+    font-size: 50px;
+    color: cyan;
+    background: black;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    border: 10px dashed magenta;
+    padding: 20px;
+}
+.button {
+    background: rainbow;
+    font-size: 30px;
+    padding: 20px;
+    border: 5px dotted orange;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 10px red;
+    animation: spin 2s infinite linear;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+img {
+    width: 200px;
+    height: 200px;
+    transform: rotate(15deg);
+}
+.ad {
+    width: 300px;
+    height: 250px;
+    background: yellow;
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    border: 5px solid green;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    animation: shake 0.5s infinite;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 250px;
+    height: 150px;
+    background: orange;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border: 5px solid purple;
+    text-align: center;
+    padding: 20px;
+    z-index: 9999;
+    animation: pop 0.5s infinite alternate;
+}
+@keyframes pop {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}
+.random-text {
+    font-size: 40px;
+    color: hotpink;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(25deg);
+    animation: bounce 1s infinite alternate;
+}
+@keyframes bounce {
+    from { transform: translate(-50%, -50%) rotate(25deg) scale(1); }
+    to { transform: translate(-50%, -55%) rotate(25deg) scale(1.2); }
+}
